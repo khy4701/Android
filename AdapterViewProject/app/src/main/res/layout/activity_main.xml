@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adapterviewproject.MainActivity">
+
+       <RadioGroup
+           android:id="@+id/imageGroup"
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/muzi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="무지"/>
+
+         <RadioButton
+             android:id="@+id/nemo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="네모"/>
+
+      </RadioGroup>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtName"
+       android:hint ="이름"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtTel"
+       android:hint ="전화번호"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtAge"
+       android:hint ="나이"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="추가"
+       android:onClick="AddInfo"/>
+
+    <Button
+        android:id="@+id/btnSortDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="이름순으로 내림차순 정렬"/>
+
+    <Button
+        android:id="@+id/btnSortAsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="이름순으로 오름차순 정렬"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="모두 삭제"
+       android:onClick="clearAll"/>
+
+
+   <ListView
+       android:id="@+id/ListView"
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </ListView>
+</LinearLayout>

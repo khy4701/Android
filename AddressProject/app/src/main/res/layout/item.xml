@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/item_info"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="10dp"
+            android:text="tes"
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:text="test"
+            android:id="@+id/item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:text="test"
+            android:id="@+id/item_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="수정"
+            android:id="@+id/btnChange"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:background="@drawable/asd"
+            android:text="삭제"
+            android:id="@+id/btnDelete"
+            android:focusable="false"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
